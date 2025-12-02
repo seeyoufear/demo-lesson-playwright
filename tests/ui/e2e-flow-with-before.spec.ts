@@ -29,11 +29,11 @@ test('login with correct credentials and verify order creation page', async ({})
 
 test('login and create order', async ({}) => {
   const orderCreationPage = await loginPage.signIn(USERNAME, PASSWORD)
-  await orderCreationPage.nameField.fill('nastya');
+  await orderCreationPage.nameField.fill('nastya')
   await orderCreationPage.phoneField.fill('123123')
   await orderCreationPage.commentField.fill('kittykat')
-  await orderCreationPage.createOrderButton.click();
-  await orderCreationPage.checkCreationPopupVisible(true);
+  await orderCreationPage.createOrderButton.click()
+  await orderCreationPage.checkCreationPopupVisible(true)
   // implement test
 })
 

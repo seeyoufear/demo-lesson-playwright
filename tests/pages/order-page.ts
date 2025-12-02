@@ -23,15 +23,15 @@ export class OrderPage {
   }
 
   async checkInnerComponentsVisible(): Promise<void> {
-    await expect(this.statusButton).toBeVisible();
-    await expect(this.statusButton).toBeEnabled();
-    await expect(this.nameField).toBeVisible();
-    await expect(this.phoneField).toBeVisible();
-    await expect(this.commentField).toBeVisible();
-    await expect(this.createOrderButton).toBeVisible();
+    await expect(this.statusButton).toBeVisible()
+    await expect(this.statusButton).toBeEnabled()
+    await expect(this.nameField).toBeVisible()
+    await expect(this.phoneField).toBeVisible()
+    await expect(this.commentField).toBeVisible()
+    await expect(this.createOrderButton).toBeVisible()
   }
 
   async checkCreationPopupVisible(visible = true): Promise<void> {
-    await expect(this.successfulCreationPopup).toBeVisible({visible});
+    await expect(this.successfulCreationPopup).toBeVisible({ visible })
   }
 }
